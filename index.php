@@ -29,6 +29,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/style2.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Restaurantly - v3.1.0
@@ -40,87 +41,10 @@
 
 <body>
 
-  <!-- ======= Top Bar ======= -->
-  <div id="topbar" class="d-flex align-items-center fixed-top">
-    <div class="container d-flex justify-content-center justify-content-md-between">
+  <?php include('./navbar.php'); ?>
+  <?php include('./hero-section.php');?>
 
-      <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-phone d-flex align-items-center"><span>+1 5589 55488 55</span></i>
-        <i class="bi bi-clock d-flex align-items-center ms-4"><span> Mon-Sat: 11AM - 23PM</span></i>
-      </div>
 
-      <div class="languages d-none d-md-flex align-items-center">
-        <ul>
-          <li>En</li>
-          <li><a href="#">De</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-cente">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
-
-      <h1 class="logo me-auto me-lg-0"><a href="index.html">Restaurantly</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-
-      <nav id="navbar" class="navbar order-last order-lg-0">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#menu">Menu</a></li>
-          <li><a class="nav-link scrollto" href="#specials">Specials</a></li>
-          <li><a class="nav-link scrollto" href="#events">Events</a></li>
-          <li><a class="nav-link scrollto" href="#chefs">Chefs</a></li>
-          <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-      <a href="#book-a-table" class="book-a-table-btn scrollto d-none d-lg-flex">Book a table</a>
-
-    </div>
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
-    <div class="container position-relative text-center text-lg-start" data-aos="zoom-in" data-aos-delay="100">
-      <div class="row">
-        <div class="col-lg-8">
-          <h1>Welcome to <span>Restaurantly</span></h1>
-          <h2>Delivering great food for more than 18 years!</h2>
-
-          <div class="btns">
-            <a href="#menu" class="btn-menu animated fadeInUp scrollto">Our Menu</a>
-            <a href="#book-a-table" class="btn-book animated fadeInUp scrollto">Book a Table</a>
-          </div>
-        </div>
-        <div class="col-lg-4 d-flex align-items-center justify-content-center position-relative" data-aos="zoom-in" data-aos-delay="200">
-          <a href="https://www.youtube.com/watch?v=GlrxcuEDyF8" class="glightbox play-btn"></a>
-        </div>
-
-      </div>
-    </div>
-  </section><!-- End Hero -->
 
   <main id="main">
 
@@ -156,45 +80,7 @@
       </div>
     </section><!-- End About Section -->
 
-    <!-- ======= Why Us Section ======= -->
-    <section id="why-us" class="why-us">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Why Us</h2>
-          <p>Why Choose Our Restaurant</p>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-4">
-            <div class="box" data-aos="zoom-in" data-aos-delay="100">
-              <span>01</span>
-              <h4>Lorem Ipsum</h4>
-              <p>Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mt-4 mt-lg-0">
-            <div class="box" data-aos="zoom-in" data-aos-delay="200">
-              <span>02</span>
-              <h4>Repellat Nihil</h4>
-              <p>Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor quod et vel dire leno para dest</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mt-4 mt-lg-0">
-            <div class="box" data-aos="zoom-in" data-aos-delay="300">
-              <span>03</span>
-              <h4> Ad ad velit qui</h4>
-              <p>Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Why Us Section -->
+    <?php include('./why-us-section.php'); ?>
 
     <!-- ======= Menu Section ======= -->
     <section id="menu" class="menu section-bg">
@@ -971,6 +857,118 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!--Font Awesome Kit-->
+  <script src="https://kit.fontawesome.com/c7aad1ddf6.js" crossorigin="anonymous"></script>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+  ></script>
+  <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+  ></script>
+
+  <!--slider JS-->
+  <script>
+    const slider = document.getElementById('before-after-slider');
+    const before = document.getElementById('before-image');
+    const beforeImage = before.getElementsByTagName('img')[0];
+    const resizer = document.getElementById('resizer');
+
+    let active = false;
+
+    //Sort overflow out for Overlay Image
+    document.addEventListener("DOMContentLoaded", function() {
+      let width = slider.offsetWidth;
+      console.log(width);
+      beforeImage.style.width = width + 'px';
+    });
+
+    //Adjust width of image on resize 
+    window.addEventListener('resize', function() {
+      let width = slider.offsetWidth;
+      console.log(width);
+      beforeImage.style.width = width + 'px';
+    })
+
+    resizer.addEventListener('mousedown',function(){
+      active = true;
+     resizer.classList.add('resize');
+    
+    });
+
+    document.body.addEventListener('mouseup',function(){
+      active = false;
+     resizer.classList.remove('resize');
+    });
+
+    document.body.addEventListener('mouseleave', function() {
+      active = false;
+      resizer.classList.remove('resize');
+    });
+
+    document.body.addEventListener('mousemove',function(e){
+      if (!active) return;
+      let x = e.pageX;
+      x -= slider.getBoundingClientRect().left;
+      slideIt(x);
+      pauseEvent(e);
+    });
+
+    resizer.addEventListener('touchstart',function(){
+      active = true;
+      resizer.classList.add('resize');
+    });
+
+    document.body.addEventListener('touchend',function(){
+      active = false;
+      resizer.classList.remove('resize');
+    });
+
+    document.body.addEventListener('touchcancel',function(){
+      active = false;
+      resizer.classList.remove('resize');
+    });
+
+    //calculation for dragging on touch devices
+    document.body.addEventListener('touchmove',function(e){
+      if (!active) return;
+      let x;
+
+      let i;
+      for (i=0; i < e.changedTouches.length; i++) {
+      x = e.changedTouches[i].pageX; 
+      }
+
+      x -= slider.getBoundingClientRect().left;
+      slideIt(x);
+      pauseEvent(e);
+    });
+
+    function slideIt(x){
+        let transform = Math.max(0,(Math.min(x,slider.offsetWidth)));
+        before.style.width = transform+"px";
+        resizer.style.left = transform-0+"px";
+    }
+
+    //stop divs being selected.
+    function pauseEvent(e){
+        if(e.stopPropagation) e.stopPropagation();
+        if(e.preventDefault) e.preventDefault();
+        e.cancelBubble=true;
+        e.returnValue=false;
+        return false;
+    }
+
+
+  </script>
 
 </body>
 
