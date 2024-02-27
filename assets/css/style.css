@@ -8,6 +8,12 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+:root{
+  --pink: #e40276;
+  --dark: #19141a;
+  --dark-pink: #75186a;
+}
+
 * {
  font-family: 'Montserrat', sans-serif;
 }
@@ -688,7 +694,7 @@ section {
   font-size: 36px;
   font-weight: 700;
   font-family: "Playfair Display", serif;
-  color: #cda45e;
+  color: #e40276;
 }
 
 /*--------------------------------------------------------------
@@ -912,7 +918,7 @@ section {
 }
 
 .menu #menu-flters li:hover, .menu #menu-flters li.filter-active {
-  color: #cda45e;
+  color: var(--pink);
 }
 
 .menu #menu-flters li:last-child {
