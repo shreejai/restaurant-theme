@@ -17,6 +17,7 @@
               <li data-filter=".filter-facials">Facial</li>
               <li data-filter=".filter-lashes">Lashes</li>
               <li data-filter=".filter-threading">Threading</li>
+              <li data-filter=".filter-henna">Henna</li>
             </ul>
           </div>
         </div>
@@ -26,6 +27,7 @@
           <?php include("./services-facial.php"); ?>
           <?php include("./services-lashes.php"); ?>
           <?php include("./services-threading.php"); ?>
+          <?php include("./services-henna.php"); ?>
 
           <div class="col-lg-6 menu-item filter-starters">
             <img src="assets/img/menu/lobster-bisque.jpg" class="menu-img" alt="">
