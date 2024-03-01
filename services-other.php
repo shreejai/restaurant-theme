@@ -6,7 +6,7 @@
   foreach($other_services as $other_name => $other_details){
 ?>
 
-  <div class="col-lg-6 menu-item filter-other">
+  <div id="other-treatments" class="col-lg-6 menu-item filter-other">
     <!-- <img src="assets/img/menu/lobster-bisque.jpg" class="menu-img" alt=""> -->
     <div class="menu-content">
       <a href="#"><?php echo $other_name ?></a>

@@ -1,10 +1,15 @@
-  <!-- ======= Top Bar ======= -->
+<?php 
+$email = "info@tuliplashnbrow.com.au";
+$phone = "+61 0452 348 815";
+$timings = "Mon-Sat: 9AM - 5:30PM | Sun: 10AM - 4PM";
+?>
+<!-- ======= Top Bar ======= -->
   <div id="topbar" class="d-flex align-items-center fixed-top">
     <div class="container d-flex justify-content-center justify-content-md-between">
 
       <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-phone d-flex align-items-center"><span>+61 0452 348 815</span></i>
-        <i class="bi bi-clock d-flex align-items-center ms-4"><span> Mon-Sat: 9AM - 5:30PM | Sun: 10AM - 4PM</span></i>
+        <i class="bi bi-phone d-flex align-items-center"><span><?php echo $phone; ?></span></i>
+        <i class="bi bi-clock d-flex align-items-center ms-4"><span><?php echo $timings; ?> </span></i>
       </div>
 
       <div class="languages d-none d-md-flex align-items-center">
