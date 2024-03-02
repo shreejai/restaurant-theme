@@ -1055,7 +1055,7 @@ section {
 # Events
 --------------------------------------------------------------*/
 .events {
-  background: url(../img/events-bg.jpg) center center no-repeat;
+  background: url(../img/crowd.webp) center center no-repeat;
   background-size: cover;
   position: relative;
 }
