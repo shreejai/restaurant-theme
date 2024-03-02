@@ -42,7 +42,7 @@
 <body>
 
   <?php include('./navbar.php'); ?>
-  <?php //include('./hero-section.php');?>
+  <?php include('./hero-section.php');?>
 
 
 
@@ -100,10 +100,10 @@
             <div class="swiper-slide">
               <div class="row event-item">
                 <div class="col-lg-6">
-                  <img src="assets/img/event-birthday.jpg" class="img-fluid" alt="">
+                  <img src="https://images.pexels.com/photos/936554/pexels-photo-936554.jpeg" class="img-fluid" alt="">
                 </div>
                 <div class="col-lg-6 pt-4 pt-lg-0 content">
-                  <h3>Birthday Parties</h3>
+                  <h3>Wedding Packages</h3>
                   <div class="price">
                     <p><span>$189</span></p>
                   </div>
@@ -127,10 +127,10 @@
             <div class="swiper-slide">
               <div class="row event-item">
                 <div class="col-lg-6">
-                  <img src="assets/img/event-private.jpg" class="img-fluid" alt="">
+                  <img src="https://images.pexels.com/photos/12872536/pexels-photo-12872536.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="img-fluid" alt="">
                 </div>
                 <div class="col-lg-6 pt-4 pt-lg-0 content">
-                  <h3>Private Parties</h3>
+                  <h3>Henna Packages</h3>
                   <div class="price">
                     <p><span>$290</span></p>
                   </div>
@@ -154,10 +154,10 @@
             <div class="swiper-slide">
               <div class="row event-item">
                 <div class="col-lg-6">
-                  <img src="assets/img/event-custom.jpg" class="img-fluid" alt="">
+                  <img src="https://images.pexels.com/photos/1229414/pexels-photo-1229414.jpeg" class="img-fluid" alt="">
                 </div>
                 <div class="col-lg-6 pt-4 pt-lg-0 content">
-                  <h3>Custom Parties</h3>
+                  <h3>Custom Event Packages</h3>
                   <div class="price">
                     <p><span>$99</span></p>
                   </div>
