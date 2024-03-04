@@ -434,6 +434,18 @@ require './PHPMailer/SMTP.php';
 //Create an instance; passing `true` enables exceptions
 $mail = new PHPMailer(true);
 
+//Fetch env
+// Load the environment variables from the .env file
+$envFile = __DIR__ . '/.env';
+if (file_exists($envFile)) {
+  $env = parse_ini_file($envFile);
+} else {
+  // Handle error if .env file doesn't exist
+  die('.env file not found');
+}
+// Access the password from the environment variables
+$gmail_smtp_password = $env['GMAIL_SECRET'];
+
 try {
     //Server settings
     //$mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
@@ -441,7 +453,7 @@ try {
     $mail->Host       = 'smtp.gmail.com';                       //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
     $mail->Username   = 'shreejairaj@gmail.com';                     //SMTP username
-    $mail->Password   = 'loqu uccd kift loup';                               //SMTP password
+    $mail->Password   = $gmail_smtp_password;                               //SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
     $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
